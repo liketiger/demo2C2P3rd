@@ -97,10 +97,14 @@ button {
   background-color: white;
 }
 .btn-2C2P{
-  width: 120px;
+  width: 150px;
   height: 80px;
   font-size: 30px;
   margin-bottom: 30px;
+  background-color: #00B14F;
+}
+.btn-2C2P:hover{
+  background-color: #00B14F;
 }
 
 .btn-cls{

@@ -91,22 +91,17 @@
         <button type="button" id="checkout-button" data-bs-toggle="modal" data-bs-target="#myModal">구매</button>      
     </section>
     <div class="modal fade" tabindex="-1" id="myModal">
-        <div class="modal-dialog modal-fullscreen">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <img src="./assets/img/logo.PNG" alt="Eximbay logo">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">           
-              <div class="mb-3">
-                <label for="recipient-name" class="col-form-label">Code</label>
-                <input type="text" class="form-control" id="recipient-name">
-              </div>
-            </div>
-            <div class="modal-footer">
               <button class="btn btn-primary btn-2C2P" onclick="submitRequestParameter()" type="button">   
-                Pay
-                </button>             
+                GrabPay
+                </button>  
+            <div class="modal-footer">                         
             </div>
           </div>
         </div>
