@@ -31,6 +31,8 @@ for (const i of drul1List) {
     drPlaceholder2.textContent = 'PaymentChannel';
     drPlaceholder1.textContent = ctx;
     paymentToken.currencyCode = ctx;
+    curCode = ctx;
+    midSet(curCode);
     drPlaceholder2.removeAttribute('disabled');
     filtering(ctx)
   });
@@ -58,6 +60,31 @@ function unfilter(){
     i.style.display = 'none';
   }
 }
+
+function midSet(curCode) {
+  switch (curCode) {
+    case 'SGD':
+      paymentToken.merchantID = '702702000001670';
+      break;
+    case 'PHP':
+      paymentToken.merchantID = '608608000000685';
+      break;
+    case 'MYR':
+      paymentToken.merchantID = '458458000001107';
+      break;
+    case 'MMK':
+      paymentToken.merchantID = '104104000000550';
+      break;
+    case 'THB':
+      paymentToken.merchantID = '764764000009889';
+      break;
+    case 'VND':
+      paymentToken.merchantID = '704704000000046';
+      break;
+  }
+}
+
+
 
 function submitRequestParameter() {
   $.ajax({
