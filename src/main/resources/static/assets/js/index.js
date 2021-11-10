@@ -16,7 +16,7 @@ let btn_2C2P = document.querySelector(".btn-2C2P");
 let curCode = drPlaceholder1.textContent;
 
 let paymentToken = {
-  merchantID: "JT01",
+  merchantID: "702702000001662",
   invoiceNo: "1523953661",
   description: desc,
   amount: parseFloat(amt).toFixed(2),
